@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="cn.hou.entity">
+	<class name="Student" table="student">
+		<id name="id" column="id">
+			<generator class="native" />
+		</id>
+		<!-- 用户名 -->
+		<property name="name" column="name" type="string"
+			 />
+		<!-- 密码 -->
+		<property name="number" column="number" type="string"
+			 />
+		<property name="age" column="age" type="int"
+			 />
+		<property name="grade" column="grade" type="string"
+			 />
+		</class>
+</hibernate-mapping>
